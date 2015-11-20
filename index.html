@@ -1,0 +1,193 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Name of My Presentation</title>
+
+    <link rel="apple-touch-icon" href="//assets.decoded.com/images/apple-touch-icon.png">
+    <link rel="icon" sizes="296x296" href="//assets.decoded.com/images/apple-touch-icon.png">
+
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+
+    <!--Link to impress stylesheet-->
+    <link href="https://developer.cdn.mozilla.net/media/uploads/demos/b/a/bartaz/54e3827142e4149a5c01db64c9517c84/impressjs_1333223745_demo_package/css/impress-demo.css" rel="stylesheet" />
+
+    <style>
+      body {
+        background: #FFF;
+      }
+    </style>
+</head>
+
+<body class="impress-not-supported">
+
+    <!-- This message is only visible when Impress isn't supported -->
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+
+
+
+    <!-- Here's our presentation! -->
+    <div id="impress">
+
+
+    <!--FIRST SLIDE: Style and Content -->
+        <style>
+            #logo {
+                text-align: center;
+            }
+            #logo img{
+                width: 400px;
+            }
+        </style>
+
+        <div id="logo" class="step" data-x="0" data-y="-2000" data-scale="1">
+            <img src="http://assets.decoded.com/images/decoded-round.png">
+        </div>
+
+
+
+
+    <!--SECOND SLIDE: Style and Content -->
+        <style>
+            #title {
+                text-align: center;
+                font-size: 100px;
+                font-family: 'Oswald', sans-serif;
+            }
+        </style>
+
+        <div id="title" class="step" data-x="0" data-y="0" data-scale="1">
+            Title Goes Here
+        </div>
+
+
+
+
+    <!--THIRD SLIDE: Style and Content -->
+        <style>
+            #slide-1 div{
+                width: 125vw;
+                height: 125vh;
+                background-color: yellow;
+                margin: 0 -400px;
+                display: table;
+                vertical-align: middle;
+                text-align: center;
+                max-width: 3000px;
+                background: url("http://img02.deviantart.net/9620/i/2011/194/f/e/lithuanian_pine_woods_by_hseamons-d3oex8e.jpg");
+                background-position: center;
+                background-size: cover;
+            }
+            #slide-1 p{
+                display: table-cell;
+                vertical-align: middle;
+                color: white;
+                font-size: 150px;
+                font-family: 'Oswald', sans-serif;
+                text-shadow: 3px 3px black;
+            }
+        </style>        
+
+        <div id="slide-1" class="step" data-x="2000" data-y="0" data-rotate="0" data-scale="1">
+            <div>
+            <p>Some text here</p>
+            </div>     
+        </div>
+
+
+
+
+    <!--FOURTH SLIDE: Style and Content -->
+        <style>
+        #slide-2 iframe{
+            margin-left: -200px;
+        }
+        </style>
+
+        <div id="slide-2" class="step" data-x="4000" data-y="0" data-rotate="0" data-scale="1">
+            <iframe src="http://www.decoded.com" frameborder="0" height="800" width="1200" seamless></iframe>
+        </div>
+
+
+
+
+    <!--FIFTH SLIDE: Style and Content -->
+        <div id="slide-3" class="step" data-x="4000" data-y="2000" data-z="-3000" data-rotate="0" data-scale="1">
+          <!-- Replace the <p>...</p> below with the embed code from Google Trends [Pro Tip: add more terms to a longitudinal trend graph with terms separated by a comma] -->
+          
+          <p>This'll be a Google Trends visualization</p>
+          
+          <!--<script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-GB&q=king+kong,godzilla,mothra&tz=Etc/GMT%2B5&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=800&h=500"></script>-->
+
+        </div>
+
+
+
+
+    <!--SIXTH SLIDE: Style and Content -->
+        <style>
+        #slide-4 iframe{
+            margin-left: -200px;
+        }
+        </style>
+
+        <div id="slide-4" class="step" data-x="4000" data-y="4000" data-rotate="0" data-scale="1">
+            <p>This'll be a d3 visualization</p>
+            <!--<iframe src="http://mbostock.github.io/d3/talk/20111116/force-collapsible.html" frameborder="0" height="800" width="1000" seamless>
+            </iframe>-->
+        </div>
+
+
+
+
+    <!--SEVENTH SLIDE: Style and Content -->
+        <div id="slide-5" class="step" data-x="6000" data-y="2000" data-scale="1">
+            Slide 5
+        </div>
+
+
+
+
+    <!--EIGHTH SLIDE: Style and Content -->
+        <style>
+            #slide-6 p {
+                text-align: center;
+                font-family: 'Oswald', sans-serif;
+                font-size: 125px;
+                color: #333;
+            }
+        </style>
+
+        <div id="slide-6" class="step" data-x="10000" data-y="8000" data-z="-1000" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+          <p>The End</p>
+        </div>
+    </div>
+
+<!-- Hints -->
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<!-- Link to impress javascript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/impress.js/0.5.3/impress.min.js"></script>
+<script>impress().init();</script>
+
+</body>
+
+</html>
