@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Name of My Presentation</title>
+    <title>My Presentation</title>
 
     <link rel="apple-touch-icon" href="//assets.decoded.com/images/apple-touch-icon.png">
     <link rel="icon" sizes="296x296" href="//assets.decoded.com/images/apple-touch-icon.png">
@@ -20,6 +20,22 @@
     <style>
       body {
         background: #FFF;
+      }
+      #inciting div, #conflict div, #resolution div{
+        width: 125vw;
+        height: 125vh;
+        margin: 0 -400px;
+        display: table;
+        vertical-align: middle;
+        text-align: center;
+        max-width: 3000px;
+        background-position: center;
+        background-size: cover;
+      }
+      #inciting p, #conflict p, #resolution p{
+        display: table-cell;
+        vertical-align: middle;
+        text-shadow: 3px 3px black;
       }
     </style>
 </head>
@@ -39,7 +55,7 @@
     <div id="impress">
 
 
-    <!--FIRST SLIDE: Style and Content -->
+    <!--FIRST SLIDE: Logo - Style and Content -->
         <style>
             #logo {
                 text-align: center;
@@ -56,7 +72,7 @@
 
 
 
-    <!--SECOND SLIDE: Style and Content -->
+    <!--SECOND SLIDE: Title - Style and Content -->
         <style>
             #title {
                 text-align: center;
@@ -72,32 +88,20 @@
 
 
 
-    <!--THIRD SLIDE: Style and Content -->
+    <!--THIRD SLIDE: Inciting Incident - Style and Content -->
         <style>
-            #slide-1 div{
-                width: 125vw;
-                height: 125vh;
+            #inciting div{
                 background-color: yellow;
-                margin: 0 -400px;
-                display: table;
-                vertical-align: middle;
-                text-align: center;
-                max-width: 3000px;
                 background: url("http://img02.deviantart.net/9620/i/2011/194/f/e/lithuanian_pine_woods_by_hseamons-d3oex8e.jpg");
-                background-position: center;
-                background-size: cover;
             }
-            #slide-1 p{
-                display: table-cell;
-                vertical-align: middle;
+            #inciting p{
                 color: white;
                 font-size: 150px;
                 font-family: 'Oswald', sans-serif;
-                text-shadow: 3px 3px black;
             }
         </style>        
 
-        <div id="slide-1" class="step" data-x="2000" data-y="0" data-rotate="0" data-scale="1">
+        <div id="inciting" class="step" data-x="2000" data-y="0" data-rotate="0" data-scale="1">
             <div>
             <p>Some text here</p>
             </div>     
@@ -106,60 +110,52 @@
 
 
 
-    <!--FOURTH SLIDE: Style and Content -->
+    <!--FOURTH SLIDE: Conflict - Style and Content -->
         <style>
-        #slide-2 iframe{
-            margin-left: -200px;
-        }
-        </style>
+            #conflict div{
+                background-color: red;
+                background: url("http://i.huffpost.com/gen/1438088/images/o-PACIFIC-OCEAN-WARMING-facebook.jpg");
+            }
+            #conflict p{
+                color: white;
+                font-size: 150px;
+                font-family: 'Oswald', sans-serif;
+            }
+        </style>        
 
-        <div id="slide-2" class="step" data-x="4000" data-y="0" data-rotate="0" data-scale="1">
-            <iframe src="http://www.decoded.com" frameborder="0" height="800" width="1200" seamless></iframe>
+        <div id="conflict" class="step" data-x="4000" data-y="0" data-rotate="0" data-scale="1">
+            <div>
+            <p>Some text here</p>
+            </div>     
         </div>
 
 
 
 
-    <!--FIFTH SLIDE: Style and Content -->
-        <div id="slide-3" class="step" data-x="4000" data-y="2000" data-z="-3000" data-rotate="0" data-scale="1">
-          <!-- Replace the <p>...</p> below with the embed code from Google Trends [Pro Tip: add more terms to a longitudinal trend graph with terms separated by a comma] -->
-          
-          <p>This'll be a Google Trends visualization</p>
-          
-          <!--<script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-GB&q=king+kong,godzilla,mothra&tz=Etc/GMT%2B5&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=800&h=500"></script>-->
-
-        </div>
-
-
-
-
-    <!--SIXTH SLIDE: Style and Content -->
+    <!--FIFTH SLIDE: Resolution - Style and Content -->
         <style>
-        #slide-4 iframe{
-            margin-left: -200px;
-        }
-        </style>
+            #resolution div{
+                background-color: blue;
+                background: url("http://i.huffpost.com/gen/1077988/images/o-UYUNI-SALT-FLATS-facebook.jpg");
+            }
+            #resolution p{
+                color: white;
+                font-size: 150px;
+                font-family: 'Oswald', sans-serif;
+            }
+        </style>        
 
-        <div id="slide-4" class="step" data-x="4000" data-y="4000" data-rotate="0" data-scale="1">
-            <p>This'll be a d3 visualization</p>
-            <!--<iframe src="http://mbostock.github.io/d3/talk/20111116/force-collapsible.html" frameborder="0" height="800" width="1000" seamless>
-            </iframe>-->
+        <div id="resolution" class="step" data-x="6000" data-y="0" data-rotate="0" data-scale="1">
+            <div>
+            <p>Some text here</p>
+            </div>     
         </div>
 
 
 
-
-    <!--SEVENTH SLIDE: Style and Content -->
-        <div id="slide-5" class="step" data-x="6000" data-y="2000" data-scale="1">
-            Slide 5
-        </div>
-
-
-
-
-    <!--EIGHTH SLIDE: Style and Content -->
+    <!--SIXTH SLIDE: The End - Style and Content -->
         <style>
-            #slide-6 p {
+            #the-end p {
                 text-align: center;
                 font-family: 'Oswald', sans-serif;
                 font-size: 125px;
@@ -167,10 +163,69 @@
             }
         </style>
 
-        <div id="slide-6" class="step" data-x="10000" data-y="8000" data-z="-1000" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <div id="the-end" class="step" data-x="8000" data-y="8000" data-z="-1000" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
           <p>The End</p>
         </div>
+   
+
+
+
+
+    <!-- APPENDIX: Webpage - Style and Content -->
+        <style>
+        #web iframe{
+            margin-left: -200px;
+        }
+        </style>
+
+        <div id="web" class="step" data-x="10000" data-y="10000" data-z="4000" data-rotate="0" data-scale="1">
+            
+            <!-- Below is an iframe to a webpage - Replace the website in the src="[WEBPAGE]" to show a different site -->
+            <iframe src="http://www.decoded.com" frameborder="0" height="800" width="1200" seamless></iframe>
+        </div>
+
+
+
+
+    <!-- APPENDIX: Google Trends - Style and Content -->
+        <div id="google-trends" class="step" data-x="12000" data-y="2000" data-z="-3000" data-rotate="0" data-scale="1">
+
+            <!-- Below is the embed code for a google trends visualization -->
+            <!-- Replace all of the code OR Replace 'king+kong,godzilla,mothra' with other terms in single quotes 'TERM 1, TERM 2, TERM 3' -->
+            <script type="text/javascript" src="//www.google.com/trends/embed.js?hl=en-GB&q=king+kong,godzilla,mothra&tz=Etc/GMT%2B5&content=1&cid=TIMESERIES_GRAPH_0&export=5&w=800&h=500"></script>
+
+        </div>
+
+
+
+
+    <!--APPENDIX: d3 Visualization - Style and Content -->
+        <style>
+        #d3-vis iframe{
+            margin-left: -200px;
+        }
+        </style>
+
+        <div id="d3-vis" class="step" data-x="14000" data-y="4000" data-rotate="0" data-scale="1">
+        
+            <!-- Below is an iframe to a d3 visualization -->
+            <!-- Replace the website in the src="[WEBPAGE]" to show a different visualization -->
+
+            <iframe src="http://mbostock.github.io/d3/talk/20111116/force-collapsible.html" frameborder="0" height="800" width="1000" seamless>
+            </iframe>
+        
+        </div>
+
+
+
+
+    <!--APPENDIX: Plain Text - Style and Content -->
+        <div id="plain-text" class="step" data-x="16000" data-y="2000" data-scale="1">
+            Plain Text
+        </div>
+
     </div>
+
 
 <!-- Hints -->
 
