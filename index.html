@@ -10,33 +10,41 @@
     <link rel="apple-touch-icon" href="//assets.decoded.com/images/apple-touch-icon.png">
     <link rel="icon" sizes="296x296" href="//assets.decoded.com/images/apple-touch-icon.png">
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 
     <!--Link to impress stylesheet-->
-    <link href="https://developer.cdn.mozilla.net/media/uploads/demos/b/a/bartaz/54e3827142e4149a5c01db64c9517c84/impressjs_1333223745_demo_package/css/impress-demo.css" rel="stylesheet" />
+    <link href="//assets.decoded.com/pres/impress-demo.css" rel="stylesheet" />
 
     <style>
       body {
         background: #FFF;
       }
-      #inciting div, #conflict div, #resolution div{
-        width: 125vw;
-        height: 125vh;
-        margin: 0 -400px;
+      #inciting, #conflict, #resolution {
         display: table;
-        vertical-align: middle;
+        width: 1500px;
+      }
+      #inciting div, #conflict div, #resolution div{
+        display: table-row;
+        width: 100%;
+        text-shadow: 3px 3px black;
         text-align: center;
-        max-width: 3000px;
-        background-position: center;
-        background-size: cover;
+        height: 820px;
       }
       #inciting p, #conflict p, #resolution p{
-        display: table-cell;
+        overflow: hidden;
+        width: 100%;
+        height: 700px;
         vertical-align: middle;
-        text-shadow: 3px 3px black;
+        display: table-cell;
       }
+      @media(max-width: 900px){
+       	 #inciting, #conflict, #resolution{
+           width: 900px;
+         }
+      }
+      
     </style>
 </head>
 
@@ -66,7 +74,7 @@
         </style>
 
         <div id="logo" class="step" data-x="0" data-y="-2000" data-scale="1">
-            <img src="http://assets.decoded.com/images/decoded-round.png">
+            <img src="https://assets.decoded.com/images/decoded-round.png">
         </div>
 
 
@@ -90,9 +98,11 @@
 
     <!--THIRD SLIDE: Inciting Incident - Style and Content -->
         <style>
-            #inciting div{
+            #inciting{
                 background-color: yellow;
-                background: url("http://img02.deviantart.net/9620/i/2011/194/f/e/lithuanian_pine_woods_by_hseamons-d3oex8e.jpg");
+                background-image: url("https://images.unsplash.com/photo-1430329429612-babb42f88673");
+              	background-position: center;
+        				background-size: cover; /* switch cover to contain to fill height */
             }
             #inciting p{
                 color: white;
@@ -103,7 +113,7 @@
 
         <div id="inciting" class="step" data-x="2000" data-y="0" data-rotate="0" data-scale="1">
             <div>
-            <p>Some text here</p>
+            <p>Inciting Incident Here.</p> <!-- LESS IS MORE :) NO MORE THAN 10 WORDS -->
             </div>     
         </div>
 
@@ -112,9 +122,11 @@
 
     <!--FOURTH SLIDE: Conflict - Style and Content -->
         <style>
-            #conflict div{
+            #conflict {
                 background-color: red;
-                background: url("http://i.huffpost.com/gen/1438088/images/o-PACIFIC-OCEAN-WARMING-facebook.jpg");
+                background-image: url("https://images.unsplash.com/photo-1447069387593-a5de0862481e");
+              	background-position: center;
+        				background-size: cover; /* switch cover to contain to fill height */
             }
             #conflict p{
                 color: white;
@@ -125,7 +137,7 @@
 
         <div id="conflict" class="step" data-x="4000" data-y="0" data-rotate="0" data-scale="1">
             <div>
-            <p>Some text here</p>
+            <p>Conflict Here.</p> <!-- LESS IS MORE :) NO MORE THAN 10 WORDS -->
             </div>     
         </div>
 
@@ -134,9 +146,11 @@
 
     <!--FIFTH SLIDE: Resolution - Style and Content -->
         <style>
-            #resolution div{
+            #resolution {
                 background-color: blue;
-                background: url("http://i.huffpost.com/gen/1077988/images/o-UYUNI-SALT-FLATS-facebook.jpg");
+                background-image: url("https://images.unsplash.com/photo-1449177009399-be6867ef0505");
+              	background-position: center;
+        				background-size: cover; /* switch cover to contain to fill height */
             }
             #resolution p{
                 color: white;
@@ -147,7 +161,7 @@
 
         <div id="resolution" class="step" data-x="6000" data-y="0" data-rotate="0" data-scale="1">
             <div>
-            <p>Some text here</p>
+            <p>Resolution Here.</p> <!-- LESS IS MORE :) NO MORE THAN 10 WORDS -->
             </div>     
         </div>
 
@@ -163,8 +177,15 @@
             }
         </style>
 
-        <div id="the-end" class="step" data-x="8000" data-y="8000" data-z="-1000" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <div id="the-end" class="step" data-x="8000" data-y="8000" data-z="-2000" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
           <p>The End</p>
+        </div>
+      
+      
+      
+      
+      	<div id="appendix" class="step" data-x="12000" data-y="12000" data-z="-2000" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+          <p>... Additional Slides Below ...</p>
         </div>
    
 
@@ -178,10 +199,10 @@
         }
         </style>
 
-        <div id="web" class="step" data-x="10000" data-y="10000" data-z="4000" data-rotate="0" data-scale="1">
+        <div id="web" class="step" data-x="14000" data-y="14000" data-z="-2000" data-rotate="0" data-scale="1">
             
             <!-- Below is an iframe to a webpage - Replace the website in the src="[WEBPAGE]" to show a different site -->
-            <iframe src="http://www.decoded.com" frameborder="0" height="800" width="1200" seamless></iframe>
+          <iframe srcdoc="<body bgcolor='#CCC'><center><h1>Hello world!</h1><br><h2>This would be a webpage!</h2><div style='margin: 350px auto;'>Some text would go here.</div><footer style='border-top: thin #BBB solid;'>Footer would be here</footer></center></body>" src="[WEBPAGE]" frameborder="0" height="600" width="1200" seamless></iframe>
         </div>
 
 
@@ -211,7 +232,7 @@
             <!-- Below is an iframe to a d3 visualization -->
             <!-- Replace the website in the src="[WEBPAGE]" to show a different visualization -->
 
-            <iframe src="http://mbostock.github.io/d3/talk/20111116/force-collapsible.html" frameborder="0" height="800" width="1000" seamless>
+            <iframe src="//mbostock.github.io/d3/talk/20111116/force-collapsible.html" frameborder="0" height="800" width="1000" seamless>
             </iframe>
         
         </div>
